@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: digitalwallet-app
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8080:80"
+
+  eventstore:
+    container_name: digitalwallet-eventstore
+    environment:
+      - EVENTSTORE_CLUSTER_SIZE=1
+      - EVENTSTORE_RUN_PROJECTIONS=All
+      - EVENTSTORE_START_STANDARD_PROJECTIONS=True
+      - EVENTSTORE_DB=/var/lib/eventstore-data
+      - EVENTSTORE_INDEX=/var/lib/eventstore-index
+      - EVENTSTORE_LOG=/var/log/eventstore
+      - EVENTSTORE_ENABLE_EXTERNAL_TCP=true
+      - EVENTSTORE_ENABLE_ATOM_PUB_OVER_HTTP=true
+      - EVENTSTORE_INSECURE=True
+    volumes:
+      - type: volume
+        source: wallet-eventstore-data
+        target: /var/lib/eventstore-data
+      - type: volume
+        source: wallet-eventstore-index
+        target: /var/lib/eventstore-index
+
+volumes:
+  wallet-eventstore-data:
+    external: true
+  wallet-eventstore-index:
+    external: true

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31410.414
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalWallet.Application", "DigitalWallet.Application\DigitalWallet.Application.csproj", "{818A79DA-096D-415B-8CEF-1E244DEB8F00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalWallet.Domain", "DigitalWallet.Domain\DigitalWallet.Domain.csproj", "{609757FB-D739-4306-BA06-7B1BD0134FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalWallet.Infrastructure", "DigitalWallet.Infrastructure\DigitalWallet.Infrastructure.csproj", "{72DF30B5-E810-44B9-831E-DCDB40DCCCA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B0F94458-BB57-4271-B39E-C1768F9D2895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalWallet.Infrastructure.UnitTests", "Tests\DigitalWallet.Infrastructure.UnitTests\DigitalWallet.Infrastructure.UnitTests.csproj", "{B493A199-AABB-40A6-85A4-28F02FD1490D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalWallet.Presentation", "DigitalWallet.Presentation\DigitalWallet.Presentation.csproj", "{4DF0268D-47ED-4BCF-9AE6-BC1ECB563245}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{43A39455-1742-4844-8E42-8E73B0F7B0E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{818A79DA-096D-415B-8CEF-1E244DEB8F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818A79DA-096D-415B-8CEF-1E244DEB8F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818A79DA-096D-415B-8CEF-1E244DEB8F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818A79DA-096D-415B-8CEF-1E244DEB8F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609757FB-D739-4306-BA06-7B1BD0134FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609757FB-D739-4306-BA06-7B1BD0134FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609757FB-D739-4306-BA06-7B1BD0134FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609757FB-D739-4306-BA06-7B1BD0134FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72DF30B5-E810-44B9-831E-DCDB40DCCCA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72DF30B5-E810-44B9-831E-DCDB40DCCCA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72DF30B5-E810-44B9-831E-DCDB40DCCCA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72DF30B5-E810-44B9-831E-DCDB40DCCCA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B493A199-AABB-40A6-85A4-28F02FD1490D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B493A199-AABB-40A6-85A4-28F02FD1490D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B493A199-AABB-40A6-85A4-28F02FD1490D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B493A199-AABB-40A6-85A4-28F02FD1490D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF0268D-47ED-4BCF-9AE6-BC1ECB563245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF0268D-47ED-4BCF-9AE6-BC1ECB563245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF0268D-47ED-4BCF-9AE6-BC1ECB563245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF0268D-47ED-4BCF-9AE6-BC1ECB563245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A39455-1742-4844-8E42-8E73B0F7B0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A39455-1742-4844-8E42-8E73B0F7B0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A39455-1742-4844-8E42-8E73B0F7B0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A39455-1742-4844-8E42-8E73B0F7B0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B493A199-AABB-40A6-85A4-28F02FD1490D} = {B0F94458-BB57-4271-B39E-C1768F9D2895}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8246E277-611B-4E4E-8C1A-30C52D516F7E}
+	EndGlobalSection
+EndGlobal

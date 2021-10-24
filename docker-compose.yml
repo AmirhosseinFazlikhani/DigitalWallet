@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  app:
+    image: ${DOCKER_REGISTRY-}digitalwalletpresentation
+    build:
+      context: .
+      dockerfile: DigitalWallet.Presentation/Dockerfile
+
+  eventstore:
+    image: eventstore/eventstore:21.2.0-bionic
+    user: root
