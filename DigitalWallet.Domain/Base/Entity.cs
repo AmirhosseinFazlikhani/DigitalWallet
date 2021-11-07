@@ -34,5 +34,10 @@ namespace DigitalWallet.Domain.Base
         {
             return other.Id.Equals(Id);
         }
+
+        public void MarkChangesAsCommitted()
+        {
+            _changes.Clear();
+        }
     }
 }
