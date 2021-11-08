@@ -58,8 +58,7 @@ namespace DigitalWallet.Infrastructure.Repositories
 
         private void ClearChanges(Wallet wallet)
         {
-            var property = typeof(Wallet).GetField("_changes", BindingFlags.NonPublic | BindingFlags.Instance);
-            property.SetValue(wallet, new List<IDomainEvent>());
+            wallet.MarkChangesAsCommitted();
         }
     }
 }
